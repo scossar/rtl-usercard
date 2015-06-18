@@ -4,9 +4,7 @@ export default {
   name: 'reopen-for-rtl',
   initialize() {
     UserCardView.reopen({
-
       _willShow: function(target) {
-
         var dir = $('html').css('direction');
 
         if (!target) { return; }
@@ -20,7 +18,6 @@ export default {
 
               if (dir === 'rtl') {
                 position.right = position.left;
-
                 const overage = ($(window).width() - 50) - (position.right + width);
                 if (overage < 0) {
                   position.right += overage;
@@ -29,6 +26,7 @@ export default {
                 position.top -= $('#main-outlet').offset().top;
 
               } else {
+                // The site direction is ltr
                 const overage = ($(window).width() - 50) - (position.left + width);
                 if (overage < 0) {
                   position.left += overage;

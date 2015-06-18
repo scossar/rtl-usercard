@@ -1,3 +1,4 @@
-# name: RTL Usercard
+# name: rtl-usercard
 # version: 0.0
 # authors: scossar
+
