@@ -18,6 +18,7 @@ export default {
 
               if (dir === 'rtl') {
                 position.right = position.left;
+                position.left = 'auto';
                 const overage = ($(window).width() - 50) - (position.right + width);
                 if (overage < 0) {
                   position.right += overage;
