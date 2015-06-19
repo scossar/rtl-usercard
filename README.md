@@ -6,7 +6,7 @@ layouts on Discourse forums.
 ## Installation
 
 Follow the [Install a Plugin](https://meta.discourse.org/t/install-a-plugin/19157) howto, using
-`git clone https://github.com/discourse/discourse-tagging.git` as the plugin command.
+`git clone https://github.com/scossar/rtl-usercard` as the plugin command.
 
 ## Issues
 
