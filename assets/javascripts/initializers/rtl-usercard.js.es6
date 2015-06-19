@@ -14,20 +14,22 @@ export default {
           if (target) {
             let position = target.offset();
             if (position) {
-              position.left += target.width() - 10;
 
               if (dir === 'rtl') {
-                position.right = position.left;
+                //position.right = position.left;
+                position.right = $(window).width() - position.left + 10;
                 position.left = 'auto';
                 const overage = ($(window).width() - 50) - (position.right + width);
                 if (overage < 0) {
                   position.right += overage;
+                  position.top += target.height() + 48;
                 }
-                position.top += target.height() + 18;
                 position.top -= $('#main-outlet').offset().top;
 
               } else {
                 // The site direction is ltr
+                position.left += target.width() - 10;
+
                 const overage = ($(window).width() - 50) - (position.left + width);
                 if (overage < 0) {
                   position.left += overage;
