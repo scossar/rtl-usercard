@@ -19,7 +19,7 @@ export default {
                 //position.right = position.left;
                 position.right = $(window).width() - position.left + 10;
                 position.left = 'auto';
-                const overage = ($(window).width() - 50) - (position.right + width);
+                let overage = ($(window).width() - 50) - (position.right + width);
                 if (overage < 0) {
                   position.right += overage;
                   position.top += target.height() + 48;
@@ -30,7 +30,7 @@ export default {
                 // The site direction is ltr
                 position.left += target.width() - 10;
 
-                const overage = ($(window).width() - 50) - (position.left + width);
+                let overage = ($(window).width() - 50) - (position.left + width);
                 if (overage < 0) {
                   position.left += overage;
                   position.top += target.height() + 48;
