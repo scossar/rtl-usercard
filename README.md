@@ -1,5 +1,7 @@
 ### rtl-usercard
 
+The code in this plugin is now a part of Discourse core. There is no need to install it.
+
 This plugin fixes the problem of usercard positioning for right-to-left
 layouts on Discourse forums.
 
